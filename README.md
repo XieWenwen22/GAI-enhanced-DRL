@@ -1,7 +1,7 @@
 # GAI-enhanced-DRL
 
 ## Proposed Framework
-<img src="static/images/Framework.png" width = "90%">
+![image](static/images/Framework.png)
 ***Part A (GAN-enhanced GAI):*** We enhance the critic network of DRL by using GAN. Specifically, the generator network outputs estimated action values, while the target generator network obtains the target action values. The discriminator network attempts to minimize the distance between the estimated action values and the target action values calculated by the Bellman operator.  
 ***Part B (VAE-enhanced GAI):*** We use VAE to reduce the dimensionality of the high-dimensional state space to reduce the computational complexity issue in DRL. In this case, we train the VAE with data and use the decoder to extract representations of the state space, which are then used as inputs for the actor and critic networks. Additionally, VAE can construct a latent representation space for continuous parameters conditioned on state and embedding of discrete actions to handle hybrid actions.  
 ***Part C (Transformer-enhanced GAI):*** We enhance the actor network of DRL by using Transformer. Specifically, we replace the Multi-Layer Perceptron (MLP) with a network based on the attention mechanism of Transformer to analyze the current state in the environment.  
