@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>GAI_enhanced_DRL</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favico.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      processEscapes: true
+    }
+  });
+  </script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Generative AI for Deep Reinforcement Learning: Framework, Analysis, and Use Cases</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                Geng Sun, Wenwen Xie, Dusit Niyato, Fang Mei, Hongyang Du, Jiawen Kang, Shiwen Mao</span>
+                  </div>
+
+<!--                  <div class="is-size-5 publication-authors">-->
+<!--                    <span class="author-block">Nanyang Technological University<br>IEEE Communications Surveys & Tutorials</span>-->
+<!--                  </div>-->
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/abs/2404.10556" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <!-- <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+<!--                   Github link-->
+                  <span class="link-block">
+                    <a href="https://github.com/XieWenwen22/GAI-enhanced-DRL" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2404.10556" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            As a form of artificial intelligence (AI) technology based on interactive learning, deep reinforcement learning (DRL) has been widely applied across various fields and has achieved remarkable accomplishments. However, DRL faces some limitations, including low sample efficiency and poor generalization. Therefore, we present how to leverage generative AI (GAI) to address these issues above and enhance the performance of DRL algorithms in this paper. Firstly, we introduce several classic GAI and DRL algorithms and demonstrate the applications of GAI-enhanced DRL algorithms. Then, we discuss how to use GAI to improve the data and policy performance of DRL algorithms. Subsequently, we propose a novel framework that describes the technical details of GAI-enhanced DRL. Additionally, a case study on UAV-assisted integrated near-field/far-field communication is constructed to validate the performance of the proposed framework. Moreover, we present several future directions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <div align="center">
+          <img src="static/images/Framework.png" width="70%" alt="Proposed Framework"/>
+        </div>
+        <h2 class="subtitle has-text-centered">
+          The Proposed Framework for GAI-enhanced DRL.
+        </h2>
+         <h2 class="subtitle has-text-justified">
+          Our proposed framework consists of four parts. <br>
+          <b>Part A (GAN-enhanced GAI):</b> We enhance the critic network of DRL by using GAN. Specifically, the generator network outputs estimated action values, while the target generator network obtains the target action values. The discriminator network attempts to minimize the distance between the estimated action values and the target action values calculated by the Bellman operator.<br>
+          <b>Part B (VAE-enhanced GAI):</b> We use VAE to reduce the dimensionality of the high-dimensional state space to reduce the computational complexity issue in DRL. In this case, we train the VAE with data and use the decoder to extract representations of the state space, which are then used as inputs for the actor and critic networks. Additionally, VAE can construct a latent representation space for continuous parameters conditioned on state and embedding of discrete actions to handle hybrid actions.<br>
+           <b>Part C (Transformer-enhanced GAI):</b> We enhance the actor network of DRL by using Transformer. Specifically, we replace the Multi-Layer Perceptron (MLP) with a network based on the attention mechanism of Transformer to analyze the current state in the environment.<br>
+           <b>Part D (GDM-enhanced GAI):</b> We improve the policy network of DRL by employing the reverse process of GDM. Specifically, we treat the policy network as a denoiser, progressively adding denoising noise to the initial Gaussian noise to recover or discover the optimal actions.<br>
+        </h2>
+      </div>
+<!--        <div class="item">-->
+        <!-- Your image here -->
+<!--        <div align="center">-->
+<!--          <img src="static/images/Framework.png" width="70%" alt="Case Study1"/>-->
+<!--        </div>-->
+<!--        <h2 class="subtitle has-text-centered">-->
+<!--          This figure demonstrates the performance of our proposed framework for UAV spectrum estimation.-->
+<!--        </h2>-->
+<!--      </div>-->
+      <div class="item">
+        <!-- Your image here -->
+        <div align="center">
+          <img src="static/images/NoLengend_Result.png" width="70%" alt="Case Study2"/>
+        </div>
+        <h2 class="subtitle has-text-centered">
+          The Experiment Result of GAI-enhanced TD3.
+        </h2>
+        <h2 class="subtitle has-text-justified">
+          This figure shows the convergence curves of four GAI models-enhanced TD3 algorithm in different types of action space. <br>
+          We can observe that <b>GDM-based TD3</b> achieves the best performance compared to other GAI models. <br>
+          This is because GDM can accurately capture the underlying data distribution, which provides a more effective representation of the environment. Moreover, the unique structure of GDM, which involves a diffusion process, offers a more stable and efficient learning process.
+        </h2>
+
+      </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+
+<section class="section hero" >
+  <div class="hero-body" >
+  <div class="container is-max-desktop content">
+    <h2 class="title">Run the Program</h2>
+    <div class="content has-text-justified">
+      <p>1) Create a new conda environment with the following command:</p>
+    </div>
+    <pre><code>
+      conda create --name GAIDRL python==3.10
+    </code></pre>
+    <div class="content has-text-justified">
+      <p>2) Activate the created environment with the following command:</p>
+    </div>
+    <pre><code>
+      conda activate GAIDRL
+    </code></pre>
+    <div class="content has-text-justified">
+      <p>3) Install the following packets using pip:</p>
+    </div>
+    <pre><code>
+      pip install gym==0.26.2
+      pip install scipy==1.13.
+      pip install matplotlib==3.8.4
+      pip install numpy==1.26.4
+      pip install scipy==1.13.0
+    </code></pre>
+    <div class="content has-text-justified">
+      <p>4) Run the different algorithm:</p>
+    </div>
+    <pre><code>
+      GAN-enhanced TD3: run GAN_TD3_simple.py;
+      VAE-enhanced TD3: run VAE_TD3.py ;
+      Transformer-enhanced TD3: run Attention_TD3_double.py;
+      GDM-enhanced TD3: run mainDM3.py.
+    </code></pre>
+
+  </div>
+</div>
+</section>
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      
+      <pre><code>@article{sun2024,
+        title={Generative AI for Deep Reinforcement Learning: Framework, Analysis, and Use Cases},
+        author={Geng Sun, Wenwen Xie, Dusit Niyato, Fang Mei, Hongyang Du, Jiawen Kang, Shiwen Mao},
+        journal={arXiv preprint arXiv:2404.10556},
+        year={2024}
+      }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
