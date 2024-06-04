@@ -30,7 +30,7 @@ Run the different algorithm:
 
 ```python
 GAN-enhanced TD3: run GAN_TD3_simple.py;
-VAE-enhanced TD3: run VAE_TD3.py ;
+VAE-enhanced TD3: run VAE_TD3.py;
 Transformer-enhanced TD3: run Attention_TD3_double.py;
 GDM-enhanced TD3: run mainDM3.py.
 ```
