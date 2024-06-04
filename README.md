@@ -40,8 +40,8 @@ GDM-enhanced TD3: run mainDM3.py.
 ```python
 @article{sun2024,
         title={Generative AI for Deep Reinforcement Learning: Framework, Analysis, and Use Cases},
-        author={Geng Sun, Wenwen Xie, Dusit Niyato, Fang Mei, Hongyang Du, Jiawen Kang, Shiwen Mao},
-        journal={arXiv preprint arXiv:2404.10556},
+        author={Geng Sun, Wenwen Xie, Dusit Niyato, Fang Mei, Jiawen Kang, Hongyang Du, Shiwen Mao},
+        journal={arXiv preprint arXiv:2405.20568},
         year={2024}
       }
 ```
