@@ -21,7 +21,7 @@ Install the following packets using pip:
 
 ```python
 pip install gym==0.26.2
-pip install scipy==1.13.
+pip install torch==2.2.2
 pip install matplotlib==3.8.4
 pip install numpy==1.26.4
 pip install scipy==1.13.0
